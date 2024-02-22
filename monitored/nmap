@@ -1,0 +1,36 @@
+# Nmap 7.80 scan initiated Tue Feb 20 07:45:46 2024 as: nmap -sC -sV -O -oN nmap 10.10.11.248
+Nmap scan report for monitored.htb (10.10.11.248)
+Host is up (0.11s latency).
+Not shown: 996 closed ports
+PORT    STATE SERVICE  VERSION
+22/tcp  open  ssh      OpenSSH 8.4p1 Debian 5+deb11u3 (protocol 2.0)
+80/tcp  open  http     Apache httpd 2.4.56
+|_http-server-header: Apache/2.4.56 (Debian)
+|_http-title: Did not follow redirect to https://nagios.monitored.htb/
+389/tcp open  ldap     OpenLDAP 2.2.X - 2.3.X
+443/tcp open  ssl/http Apache httpd 2.4.56 ((Debian))
+|_http-server-header: Apache/2.4.56 (Debian)
+|_http-title: Nagios XI
+| ssl-cert: Subject: commonName=nagios.monitored.htb/organizationName=Monitored/stateOrProvinceName=Dorset/countryName=UK
+| Not valid before: 2023-11-11T21:46:55
+|_Not valid after:  2297-08-25T21:46:55
+| tls-alpn: 
+|_  http/1.1
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=2/20%OT=22%CT=1%CU=33958%PV=Y%DS=2%DC=I%G=Y%TM=65D458C
+OS:B%P=x86_64-pc-linux-gnu)SEQ(SP=104%GCD=1%ISR=107%TI=Z%CI=Z%II=I%TS=A)OPS
+OS:(O1=M539ST11NW7%O2=M539ST11NW7%O3=M539NNT11NW7%O4=M539ST11NW7%O5=M539ST1
+OS:1NW7%O6=M539ST11)WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE88%W6=FE88)ECN
+OS:(R=Y%DF=Y%T=40%W=FAF0%O=M539NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=A
+OS:S%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R
+OS:=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F
+OS:=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%
+OS:T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD
+OS:=S)
+
+Network Distance: 2 hops
+Service Info: Host: nagios.monitored.htb; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Feb 20 07:46:19 2024 -- 1 IP address (1 host up) scanned in 33.20 seconds
